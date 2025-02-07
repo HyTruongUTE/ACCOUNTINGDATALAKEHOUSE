@@ -5,10 +5,15 @@ This project builds a data lakehouse for accounting data processing and analysis
 The solution follows a three-layer Medallion architecture: raw data is imported into MySQL, transformed into Parquet, and stored in MinIO. Using Spark, data is cleaned in the silver layer and further processed into a star schema for accurate financial reporting. Dagster manages and monitors data pipelines, ensuring data integrity and automation.
 With Power BI and Metabase, financial data is visualized effectively, enabling real-time insights and better decision-making. The entire system is containerized with Docker, ensuring scalability, portability, and ease of deployment.
 This lakehouse approach is essential for accounting data as it handles large volumes efficiently, improves data governance, supports complex analytics, and ensures compliance with financial regulations, making financial reporting more accurate, automated, and insightful.
-![image](https://github.com/user-attachments/assets/d5d69419-0196-49aa-9776-6a4d30c966fe)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d5d69419-0196-49aa-9776-6a4d30c966fe" alt="image" />
+</p>
 ## System Architecture of Data Lakehouse
 ![image](https://github.com/user-attachments/assets/713499e4-511e-4bcc-a0cd-9d36e152f625)
 ## Data Quality with medallions architecture
+<p align="center">
+  ![image](https://github.com/user-attachments/assets/d90719f3-3814-47af-8792-198dd76adbf8)
+</p>
 ![image](https://github.com/user-attachments/assets/d90719f3-3814-47af-8792-198dd76adbf8)
 
 **Bronze Layer (Raw Data):** Stores data in its original format, ensuring a single source of truth and enabling easy auditing and reprocessing when needed.
